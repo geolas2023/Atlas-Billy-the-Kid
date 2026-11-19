@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Geohistorical Atlas — Billy the Kid (1859–1881)</title>
+  <meta name="author" content="Olivier J. Caron, Department of Geography, UQAM">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&family=Rye&display=swap">
+  <link rel="stylesheet" href="css/style.css?v=1">
+</head>
+<body>
+  <header class="barre">
+    <img class="embleme" src="images/etoile.svg" alt="" width="45" height="45">
+    <div class="titre">
+      <h1>Atlas Billy the Kid <span>1859–1881</span></h1>
+      <p class="projet">Henry McCarty, alias William H. Bonney</p>
+    </div>
+    <a class="lien-reseau lien-langue" href="index.html" hreflang="fr" lang="fr" title="Version française">Français</a>
+    <p class="credit"><a href="https://professeurs.uqam.ca/professeur/caron.olivier/" target="_blank" rel="noopener" title="Faculty page, UQAM">Olivier J. Caron</a> · <a href="https://geo.uqam.ca/" target="_blank" rel="noopener" title="UQAM Department of Geography">Department of Geography</a> <a href="https://uqam.ca" title="Université du Québec à Montréal"><img class="logo-uqam" src="images/uqam-logo.svg" alt="UQAM"></a></p>
+  </header>
+
+  <main class="contenu">
+    <div id="carte" aria-label="Interactive map">
+      <!-- Habillage de la carte (parchemin, bords brûlés, coins, rose des vents) : décor seulement, ne capte pas les clics -->
+      <div class="parchemin" aria-hidden="true">
+        <span class="coin hg"></span><span class="coin hd"></span><span class="coin bg"></span><span class="coin bd"></span>
+        <img class="rose" src="images/rose-des-vents.svg" alt="">
+      </div>
+      <details id="legende-carte" class="legende-carte" open>
+        <summary>Legend</summary>
+        <h3>Places</h3>
+        <label><input type="checkbox" id="c-lieux" checked> Show</label>
+        <ul>
+          <li><i class="pt fusillade"></i> gunfight, murder</li>
+          <li><i class="pt prison"></i> pursuit, arrest, jail</li>
+          <li><i class="pt proces"></i> trial</li>
+          <li><i class="pt refuge"></i> refuge</li>
+          <li><i class="pt vie"></i> birth, life, death</li>
+          <li><i class="pt incertain"></i> approximate location</li>
+        </ul>
+        <h3>Routes</h3>
+        <label><input type="checkbox" id="c-trajets" checked> Show</label>
+        <ul>
+          <li><i class="ln cheval"></i> on horseback, by wagon</li>
+          <li><i class="ln train"></i> railroad</li>
+          <li><i class="ln hypo"></i> hypothetical route</li>
+        </ul>
+        <h3>Basemap</h3>
+        <div class="choix-fond" role="radiogroup" aria-label="Basemap">
+          <label><input type="radio" name="fond" value="parchemin" checked><i class="sw parchemin"></i> Parchment</label>
+          <label><input type="radio" name="fond" value="plan"><i class="sw plan"></i> Modern map</label>
+          <label><input type="radio" name="fond" value="satellite"><i class="sw satellite"></i> Satellite</label>
+        </div>
+        <button type="button" id="btn-apropos" class="btn-apropos">About the atlas</button>
+      </details>
+    </div>
+    <aside id="panneau" aria-live="polite" aria-label="Logbook"></aside>
+  </main>
+
+  <footer class="timeline">
+    <button id="lecture" aria-label="Play">▶</button>
+    <label class="suivi" title="The map follows Billy: it flies to each place, and the rider travels each route"><input type="checkbox" id="suivi" checked> Follow Billy</label>
+    <label class="suivi" title="Speed of the animated tour">Speed
+      <select id="vitesse" aria-label="Tour speed">
+        <option value="1">×1</option>
+        <option value="2" selected>×2</option>
+        <option value="4">×4</option>
+      </select>
+    </label>
+    <div class="piste">
+      <input type="range" id="curseur" min="0" max="122" step="1" value="122" aria-label="Displayed date">
+      <div id="graduation" aria-hidden="true"></div>
+    </div>
+    <output id="date-affichee">All dates</output>
+  </footer>
+
+  <script src="https://unpkg.com/maplibre-gl@5/dist/maplibre-gl.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3/dist/topojson-client.min.js"></script>
+  <script src="js/fonds.js?v=1"></script>
+  <script src="js/app.js?v=1"></script>
+  <script src="js/visite.js?v=1"></script>
+  <script src="js/langue.js"></script>
+</body>
+</html>

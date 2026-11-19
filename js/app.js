@@ -6,20 +6,33 @@
 //   - 1859 à 1872, par année (enfance, peu documentée), en segment compressé ;
 //   - 1873 à 1881, par mois.
 // La dernière position (max) = « toutes les dates ».
+// Langue de la page : <html lang="en"> (index-en.html) affiche l'interface et les données en anglais.
+const EN = document.documentElement.lang === 'en';
+const L = (fr, en) => EN ? en : fr;
 const AN_DEBUT = 1859, AN_DETAIL = 1873, AN_FIN = 1882;
 const NB_ANNEES = AN_DETAIL - AN_DEBUT;                       // 14 positions annuelles
 const POS_MAX = NB_ANNEES + (AN_FIN - AN_DETAIL) * 12;        // 14 + 108 = 122
-const MOIS = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
+const MOIS = EN ? ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']
+             : ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'août', 'septembre', 'octobre', 'novembre', 'décembre'];
 function lirePosition(v) {
   v = Number(v);
-  if (v >= POS_MAX) return { libelle: 'Toutes les dates', borne: null };
+  if (v >= POS_MAX) return { libelle: L('Toutes les dates', 'All dates'), borne: null };
   if (v < NB_ANNEES) return { libelle: `${AN_DEBUT + v}`, borne: AN_DEBUT + v + 1 };
   const m = v - NB_ANNEES;
   return { libelle: `${MOIS[m % 12]} ${AN_DETAIL + Math.floor(m / 12)}`, borne: AN_DETAIL + (m + 1) / 12 };
 }
 
 // Grandes périodes de la vie de Billy, pour situer chaque entrée du journal
-const CHAPITRES = [
+const CHAPITRES = EN ? [
+  [1875.7, 'I · Henry McCarty, a wandering childhood'],
+  [1877.75, 'II · Henry Antrim, called “Kid,” in Arizona'],
+  [1878.9, 'III · The Lincoln County War'],
+  [1879.9, 'IV · The Governor and the Kid'],
+  [1881.0, 'V · The outlaw'],
+  [1881.4, 'VI · Trial and escape'],
+  [9999, 'VII · Fort Sumner, the end']
+]
+  : [
   [1875.7, 'I · Henry McCarty, l\'enfance errante'],
   [1877.75, 'II · Henry Antrim, dit « Kid », en Arizona'],
   [1878.9, 'III · La guerre du comté de Lincoln'],
@@ -52,16 +65,18 @@ new ResizeObserver(() => carte.resize()).observe(document.getElementById('carte'
 const COULEURS = { fusillade: '#9a3322', prison: '#2f4d63', proces: '#6b5a3c', refuge: '#3f5a2a',
                    naissance: '#1f2f3a', vie: '#1f2f3a', mort: '#1f2f3a' };
 const couleurCategorie = ['match', ['get', 'categorie'], ...Object.entries(COULEURS).flat(), '#1f2f3a'];
-const NOMS_CATEGORIE = { fusillade: 'fusillade', prison: 'arrestation, prison', proces: 'procès', refuge: 'refuge',
+const NOMS_CATEGORIE = EN ? { fusillade: 'gunfight', prison: 'arrest, jail', proces: 'trial', refuge: 'refuge', naissance: 'birth', vie: 'life', mort: 'death' }
+  : { fusillade: 'fusillade', prison: 'arrestation, prison', proces: 'procès', refuge: 'refuge',
                          naissance: 'naissance', vie: 'vie', mort: 'mort' };
-const NOMS_MODE = { train: 'chemin de fer', cheval: 'à cheval, en chariot' };
+const NOMS_MODE = EN ? { train: 'railroad', cheval: 'on horseback, by wagon' }
+  : { train: 'chemin de fer', cheval: 'à cheval, en chariot' };
 const ENCRE_MER = '#9a3322', ENCRE_TERRE = '#1f2f3a';
 const estMer = ['in', ['get', 'mode'], ['literal', ['train']]];
 
 carte.on('load', async () => {
   const [lieux, trajets] = await Promise.all([
-    fetch(`data/lieux.geojson?v=${VERSION}`).then(r => r.json()),
-    fetch(`data/trajets.geojson?v=${VERSION}`).then(r => r.json())
+    fetch(`data/lieux${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json()),
+    fetch(`data/trajets${L('', '-en')}.geojson?v=${VERSION}`).then(r => r.json())
   ]);
   window.DONNEES = { lieux, trajets }; // utilisé par la visite animée (visite.js)
   const couchesDeBase = carte.getStyle().layers.map(l => l.id);
@@ -72,7 +87,7 @@ carte.on('load', async () => {
   carte.addSource('satellite', {
     type: 'raster', tileSize: 256, maxzoom: 19,
     tiles: ['https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'],
-    attribution: 'Imagerie © Esri, Maxar, Earthstar Geographics et contributeurs'
+    attribution: L('Imagerie © Esri, Maxar, Earthstar Geographics et contributeurs', 'Imagery © Esri, Maxar, Earthstar Geographics and contributors')
   });
   carte.addLayer({ id: 'satellite', type: 'raster', source: 'satellite', layout: { visibility: 'none' } });
 
@@ -191,14 +206,14 @@ curseur.addEventListener('input', () => appliquerDate(curseur.value));
   const annee = (v, texte) => {
     const a = document.createElement('span');
     a.className = 'annee'; a.textContent = texte; a.style.left = position(v);
-    a.title = `Aller à ${texte}`;
+    a.title = L(`Aller à ${texte}`, `Go to ${texte}`);
     a.addEventListener('click', () => { curseur.value = v; appliquerDate(v); });
     g.appendChild(a);
   };
   const bande = document.createElement('span');
   bande.className = 'segment-compresse'; bande.style.left = position(0);
   bande.style.width = `calc(${(NB_ANNEES - 0.5) / POS_MAX} * (100% - ${POUCE}px))`;
-  bande.title = '1859-1872 : échelle compressée (une position par année)';
+  bande.title = L('1859-1872 : échelle compressée (une position par année)', '1859-1872: compressed scale (one step per year)');
   g.appendChild(bande);
   for (let v = 0; v < NB_ANNEES; v++) trait(v, (AN_DEBUT + v) % 5 === 0 || v === 0 ? 'trait' : 'trait mineur');
   annee(0, '1859'); annee(6, '1865');
@@ -236,14 +251,15 @@ document.getElementById('c-trajets').addEventListener('change', e => {
 
 // ---------- Journal de bord (panneau documentaire) ----------
 const echapper = s => String(s ?? '').replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
-const NOMS_CERTITUDE = { certaine: 'localisation certaine', approximative: 'approximative', hypothetique: 'hypothétique' };
+const NOMS_CERTITUDE = EN ? { certaine: 'location certain', approximative: 'approximate', hypothetique: 'hypothetical' }
+                         : { certaine: 'localisation certaine', approximative: 'approximative', hypothetique: 'hypothétique' };
 // Date EDTF -> date lisible (« 1697-09-05 » -> « 5 septembre 1697 » ; « ~ » = vers)
 function dateLisible(edtf) {
   if (!edtf) return '';
   return String(edtf).split('/').map(d => {
     const approx = /[~?]/.test(d), [a, m, j] = d.replace(/[~?]/g, '').split('-').map(Number);
-    const txt = j ? `${j === 1 ? '1er' : j} ${MOIS[m - 1]} ${a}` : m ? `${MOIS[m - 1]} ${a}` : `${a}`;
-    return approx ? `vers ${txt}` : txt;
+    const txt = j ? (EN ? `${MOIS[m - 1]} ${j}, ${a}` : `${j === 1 ? '1er' : j} ${MOIS[m - 1]} ${a}`) : m ? `${MOIS[m - 1]} ${a}` : `${a}`;
+    return approx ? `${L('vers', 'c.')} ${txt}` : txt;
   }).join(' – ');
 }
 
@@ -264,7 +280,7 @@ function afficherFiche(p, geom) {
   const genre = estTrajet ? (NOMS_MODE[p.mode] || 'route') : (NOMS_CATEGORIE[p.categorie] || '');
   const panneau = document.getElementById('panneau');
   panneau.innerHTML = `
-    <button type="button" class="fermer" aria-label="Fermer le journal" title="Fermer (Échap)">✕</button>
+    <button type="button" class="fermer" aria-label="${L('Fermer le journal', 'Close the journal')}" title="${L('Fermer (Échap)', 'Close (Esc)')}">✕</button>
     <p class="chapitre">${echapper(chapitre(Number(p.debut)))}</p>
     <h2>${echapper(p.nom)}</h2>
     <div class="filet" aria-hidden="true">★</div>
@@ -274,8 +290,8 @@ function afficherFiche(p, geom) {
       <span class="badge ${echapper(p.certitude)}">${echapper(NOMS_CERTITUDE[p.certitude] || p.certitude)}</span>
     </p>
     ${p.description ? `<p class="description">${echapper(p.description)}</p>` : ''}
-    ${p.note ? `<p class="note"><strong>Note critique :</strong> ${echapper(p.note)}</p>` : ''}
-    <div class="sources"><strong>Source :</strong> ${echapper(p.sources)}</div>`;
+    ${p.note ? `<p class="note"><strong>${L('Note critique :', 'Critical note:')}</strong> ${echapper(p.note)}</p>` : ''}
+    <div class="sources"><strong>${L('Source :', 'Source:')}</strong> ${echapper(p.sources)}</div>`;
   panneau.querySelector('.fermer').addEventListener('click', fermerFiche);
   panneau.classList.add('ouvert');
   panneau.scrollTop = 0;
@@ -284,7 +300,14 @@ function afficherFiche(p, geom) {
 function afficherApropos() {
   if (carte.getLayer('trajet-actif')) carte.setFilter('trajet-actif', ['==', ['get', 'id'], '']);
   const panneau = document.getElementById('panneau');
-  panneau.innerHTML = `
+  panneau.innerHTML = EN ? `
+    <button type="button" class="fermer" aria-label="Close" title="Close (Esc)">✕</button>
+    <h2>The Kid's File</h2>
+    <div class="filet" aria-hidden="true">★</div>
+    <p class="description">Henry McCarty, alias Henry Antrim, alias William H. Bonney, alias Billy the Kid (1859-1881): from New York to Fort Sumner, this atlas follows the places of his short life, from a wandering childhood to the Lincoln County War, the capture at Stinking Springs, the trial at La Mesilla, the escape from Lincoln and his death in Pete Maxwell's bedroom.</p>
+    <p>Click a place or a route to open its entry. The timeline moves by year from 1859 to 1872 (his childhood, poorly documented), then by month from 1873 to 1881. The ▶ button starts the ride: the rider follows each route and the map stops at each place.</p>
+    <p class="avertissement">Routes are schematic; dotted lines mark a hypothetical route. Each entry refers to the pages of its source (mainly Utley 2015, also Wallis 2007 and Garrett 1882) and flags uncertain locations. The descriptions are summaries written for the atlas and translated from the French.</p>
+    <div class="sources">Olivier J. Caron, Department of Geography, UQAM.</div>` : `
     <button type="button" class="fermer" aria-label="Fermer" title="Fermer (Échap)">✕</button>
     <h2>Le dossier du Kid</h2>
     <div class="filet" aria-hidden="true">★</div>
