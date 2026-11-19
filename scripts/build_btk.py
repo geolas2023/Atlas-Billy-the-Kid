@@ -3,6 +3,7 @@ import json, sys, datetime
 OUT = sys.argv[1]
 UT = "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press"
 WA = "Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton"
+GD = "Gardner, Mark Lee (2010), To Hell on a Fast Horse: The True Story of Billy the Kid and Pat Garrett, New York, William Morrow (PDF du Drive de l'auteur, lu en entier)"
 GA = "Garrett, Pat F. (1882), The Authentic Life of Billy, the Kid, Santa Fe, New Mexican Printing and Publishing"
 CERT = {'c': 'certaine', 'a': 'approximative', 'h': 'hypothetique'}
 
@@ -34,6 +35,7 @@ def L(n, nom, cat, edtf, lon, lat, cert, desc, src, note=''):
 
 def u(p): return f"{UT}, PDF p. {p}."
 def w(p): return f"{WA}, PDF p. {p}."
+def gd(p): return f"{GD}, PDF p. {p}." if p else f"{GD}."
 def g(p): return f"{GA}, PDF p. {p}."
 
 # ---- Enfance et errances (1859-1877)
@@ -158,6 +160,20 @@ L(37, "Fort Sumner : la tombe au vieux cimetière militaire", 'mort', '1881-07-1
   u(117) + " " + w(226))
 
 # ---- Trajets
+# ---- Pat Garrett, d'après Gardner (2010)
+L(38, "Llano Estacado, près de Rath City : Pat Garrett tue le chasseur de bisons Joe Briscoe (automne 1876)", 'fusillade', '1876~', -100.38, 33.07, 'h',
+  "Né en Alabama le 5 juin 1850 et élevé sur une plantation de la paroisse de Claiborne, en Louisiane, Pat Garrett chasse le bison au Texas. À l'automne 1876, après s'être équipée à Fort Griffin, l'équipe de Glenn et Garrett gagne le Llano Estacado. Un matin, une querelle éclate avec le jeune Irlandais Joe Briscoe : Garrett le frappe, Briscoe court chercher la hache du cuisinier, et Garrett l'abat d'une balle de pistolet. C'est le premier homme qu'il tue.",
+  gd(29) + " ; " + gd(32), "Glenn était parti chercher une pièce de fusil à Rath City : point schématique dans ce secteur.")
+L(39, "Anton Chico : Garrett épouse Apolinaria Gutiérrez (janvier 1880)", 'vie', '1880-01-14', -105.15, 35.20, 'c',
+  "Veuf de Juanita Gutiérrez, épousée sans prêtre à l'automne 1879 à Fort Sumner et morte peu après, Pat Garrett se remarie quatre jours après que le Kid a tué Joe Grant au saloon de Fort Sumner : il épouse devant le curé d'Anton Chico, à 90 milles au nord-ouest, Apolinaria (« Polinaria », dite « La Negra ») Gutiérrez, fille de José Dolores et de Feliciana Gutiérrez. Les bailes du vieux dépôt de l'intendance de Fort Sumner attiraient les jeunes filles de Puerto de Luna, de Santa Rosa et même d'Anton Chico.",
+  gd('77, 85-86'), "Point au village d'Anton Chico (comté de Guadalupe).")
+L(40, "Los Portales : la cache du Kid pour le bétail volé (décembre 1880)", 'refuge', '1880-12', -103.25, 34.12, 'a',
+  "Rocher saillant de quinze pieds au-dessus de la plaine, à 65 milles au sud-est de Fort Sumner, sur une piste à bétail vers le Panhandle texan, Los Portales doit son nom à son surplomb calcaire en forme de porches ; deux sources et une grotte y offrent un abri. Billy y cache le bétail volé. En décembre 1880, Garrett et sa troupe y espèrent reprendre une soixantaine de bêtes : ils ne trouvent que deux vaches, leurs veaux et un yearling, et dans la grotte de la farine moisie, un peu de sel et des couvertures ; le Kid avait déplacé le troupeau à quinze milles de là. Au retour, la troupe s'arrête au ranch de Wilcox et Brazil, à douze milles à l'est de Fort Sumner.",
+  gd(None), "Point aux sources de Los Portales, au sud-est de la ville de Portales, approximatif.")
+L(41, "Roswell : Garrett, Ash Upson et The Authentic Life of Billy, the Kid (1881-1882)", 'vie', '1881-08/1882', -104.523, 33.394, 'c',
+  "Après la mort du Kid, Garrett s'installe à Roswell. Le journaliste, maître de poste et juge de paix Ash Upson, qui avait connu Billy enfant à Silver City, emménage chez lui en août 1881 et rédige en grande partie The Authentic Life of Billy, the Kid (1882), la réponse de Garrett aux insinuations sur la mort du Kid. Garrett restera à Roswell jusqu'en 1891 (irrigation de la vallée du Pecos), avant de partir pour Uvalde, au Texas, puis de devenir shérif du comté de Doña Ana (affaire Fountain, 1896) et collecteur des douanes à El Paso (1901) ; il est tué près de Las Cruces en février 1908.",
+  gd('41, 157') + " ; " + GA + ".", "Point au centre historique de Roswell.")
+
 traj = []
 def T(n, nom, mode, edtf, coords, cert, desc, src, note=''):
     a, b = (edtf.split('/') + [edtf])[:2]
