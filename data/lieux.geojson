@@ -1,0 +1,893 @@
+{
+ "type": "FeatureCollection",
+ "features": [
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -73.99,
+     40.725
+    ]
+   },
+   "properties": {
+    "id": "L01",
+    "nom": "New York : naissance d'Henry McCarty",
+    "debut": 1859.8333,
+    "fin": 1859.8333,
+    "date_edtf": "1859-11",
+    "precision": "mois",
+    "certitude": "hypothetique",
+    "categorie": "naissance",
+    "description": "Henry McCarty, futur Billy the Kid, naît en novembre 1859, sans doute à New York, de Catherine McCarty, immigrante irlandaise. Le père reste inconnu (Catherine dira plus tard qu'il s'appelait Michael). Henry a un frère, Joe.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 16.",
+    "note": "Le lieu et la date restent discutés ; aucun acte de naissance n'a été retrouvé. Point symbolique dans Manhattan.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -86.158,
+     39.768
+    ]
+   },
+   "properties": {
+    "id": "L02",
+    "nom": "Indianapolis : Catherine McCarty et William Antrim",
+    "debut": 1865.0,
+    "fin": 1870.999,
+    "date_edtf": "1865~/1870",
+    "precision": "circa",
+    "certitude": "approximative",
+    "categorie": "vie",
+    "description": "Veuve, Catherine McCarty gagne Indianapolis avec ses deux fils. Elle y rencontre William Henry Harrison Antrim, ancien soldat de l'Union, nettement plus jeune qu'elle.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 16.",
+    "note": "Dates approximatives : la présence de la famille à Indianapolis n'est attestée que de façon indirecte.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -97.337,
+     37.687
+    ]
+   },
+   "properties": {
+    "id": "L03",
+    "nom": "Wichita : la blanchisserie de Catherine",
+    "debut": 1870.0,
+    "fin": 1871.5823,
+    "date_edtf": "1870/1871-07~",
+    "precision": "annee",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "En 1870, Catherine McCarty et « Uncle Bill » Antrim sont recensés à Wichita (Kansas). Elle y tient une blanchisserie, et tous deux obtiennent des terres en vertu du Homestead Act. La tuberculose de Catherine les pousse à partir à l'été 1871, vers Denver puis Santa Fe.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 17.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.94,
+     35.6905
+    ]
+   },
+   "properties": {
+    "id": "L04",
+    "nom": "Santa Fe : mariage de Catherine McCarty et William Antrim",
+    "debut": 1873.1616,
+    "fin": 1873.1616,
+    "date_edtf": "1873-03-01",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "Le 1er mars 1873, le pasteur de la First Presbyterian Church de Santa Fe unit Catherine McCarty et William H. H. Antrim ; Henry et Joe signent comme témoins. Henry prend aussi le nom d'Antrim.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 17.",
+    "note": "Point à l'église presbytérienne (Grant Avenue).",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.2747,
+     32.7701
+    ]
+   },
+   "properties": {
+    "id": "L05",
+    "nom": "Silver City : mort de la mère",
+    "debut": 1874.7068,
+    "fin": 1874.7068,
+    "date_edtf": "1874-09-16",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "mort",
+    "description": "La famille descend le Rio Grande puis gagne la ville minière de Silver City, où Antrim espère faire fortune. La tuberculose de Catherine s'aggrave ; elle meurt le 16 septembre 1874. Livrés à eux-mêmes, les deux garçons échappent à toute discipline.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 17.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -108.2733,
+     32.7712
+    ]
+   },
+   "properties": {
+    "id": "L06",
+    "nom": "Silver City : premier larcin et évasion par la cheminée",
+    "debut": 1875.726,
+    "fin": 1875.726,
+    "date_edtf": "1875-09-23",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "prison",
+    "description": "Le 23 septembre 1875, à quinze ans, Henry fait son premier pas vers le crime : avec un ivrogne surnommé « Sombrero Jack », il est mêlé au vol de linge d'une blanchisserie chinoise. Le shérif Harvey Whitehill l'enferme ; Henry s'échappe en grimpant dans la cheminée de la prison et quitte le Nouveau-Mexique pour l'Arizona.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 16-18.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.95,
+     32.55
+    ]
+   },
+   "properties": {
+    "id": "L07",
+    "nom": "Camp Grant et le ranch Hooker : apprentissage du cheval et du revolver",
+    "debut": 1875.75,
+    "fin": 1877.6657,
+    "date_edtf": "1875-10~/1877-08",
+    "precision": "circa",
+    "certitude": "approximative",
+    "categorie": "vie",
+    "description": "Le jeune fugitif gravite autour du poste militaire de Camp Grant, au pied du mont Graham, à 150 milles à l'ouest de Silver City, et autour du ranch d'Henry C. Hooker. Il vole selles, couvertures et parfois des chevaux aux soldats ; deux fois arrêté, il s'évade deux fois. C'est là qu'il apprend le cheval et les armes.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 18-20.",
+    "note": "Point entre Camp Grant et le ranch Sierra Bonita de Hooker.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -109.927,
+     32.664
+    ]
+   },
+   "properties": {
+    "id": "L08",
+    "nom": "Bonita : mort de « Windy » Cahill, premier homicide",
+    "debut": 1877.6247,
+    "fin": 1877.6247,
+    "date_edtf": "1877-08-17",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Le soir du 17 août 1877, dans le saloon de George Atkins, près de Camp Grant, le forgeron Francis P. « Windy » Cahill, qui le brutalise depuis longtemps, gifle Henry et l'insulte. Dans la lutte, Henry sort un revolver et tire. Cahill meurt le lendemain ; un jury du coroner déclare « Henry Antrim alias Kid » coupable. Il s'enfuit vers le Nouveau-Mexique.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 18-19.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.42,
+     32.6
+    ]
+   },
+   "properties": {
+    "id": "L09",
+    "nom": "Seven Rivers : avec « The Boys » de Jesse Evans",
+    "debut": 1877.75,
+    "fin": 1877.75,
+    "date_edtf": "1877-10~",
+    "precision": "circa",
+    "certitude": "approximative",
+    "categorie": "refuge",
+    "description": "Revenu au Nouveau-Mexique, le Kid suit un temps la bande de voleurs de bétail de Jesse Evans, « The Boys », jusqu'au bas Pecos, à Seven Rivers. Il y observe la vie de vrais hors-la-loi et loge chez un habitant du lieu.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 23.",
+    "note": "Le village de Seven Rivers a disparu sous le réservoir de Brantley ; point approximatif.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.385,
+     33.39
+    ]
+   },
+   "properties": {
+    "id": "L10",
+    "nom": "Ranch des Coe, sur le Ruidoso",
+    "debut": 1877.75,
+    "fin": 1877.75,
+    "date_edtf": "1877-10~",
+    "precision": "circa",
+    "certitude": "approximative",
+    "categorie": "vie",
+    "description": "Remontant le Hondo et le Ruidoso depuis Seven Rivers, le Kid rencontre les cousins Frank et George Coe, fermiers d'origine missourienne, au ranch de Frank, juste en aval du confluent du Ruidoso et du Bonito. Frank Coe se souviendra d'un garçon aimable, sobre et excellent tireur.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 27-28.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.17,
+     33.17
+    ]
+   },
+   "properties": {
+    "id": "L11",
+    "nom": "Ranch de Tunstall sur le Río Feliz",
+    "debut": 1877.9167,
+    "fin": 1878.1657,
+    "date_edtf": "1877-12~/1878-02",
+    "precision": "circa",
+    "certitude": "approximative",
+    "categorie": "vie",
+    "description": "Sur le Ruidoso, le Kid rencontre Dick Brewer, qui gère aussi, à vingt milles au sud, sur le Río Feliz, le ranch de l'Anglais John H. Tunstall. Tunstall l'engage ; Billy y travaille avec Fred Waite, avec qui il projette de s'établir sur le Río Peñasco.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 30-31.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.43,
+     33.3
+    ]
+   },
+   "properties": {
+    "id": "L12",
+    "nom": "Assassinat de John Tunstall",
+    "debut": 1878.1315,
+    "fin": 1878.1315,
+    "date_edtf": "1878-02-18",
+    "precision": "jour",
+    "certitude": "approximative",
+    "categorie": "fusillade",
+    "description": "Le 18 février 1878, Tunstall quitte son ranch du Río Feliz avec neuf chevaux par la route du nord, vers la jonction du Ruidoso et du Bonito. Rattrapé par des hommes du détachement du shérif Brady, il est abattu ; Billy, Waite et Middleton, qui chassaient le dindon à l'écart, assistent impuissants à la scène. L'assassinat déclenche la guerre du comté de Lincoln.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 37-39.",
+    "note": "Le lieu exact du meurtre, sur le chemin du Ruidoso, est approximatif.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.3845,
+     33.492
+    ]
+   },
+   "properties": {
+    "id": "L13",
+    "nom": "Lincoln : la ville de la guerre",
+    "debut": 1878.1342,
+    "fin": 1878.1342,
+    "date_edtf": "1878-02-19",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "Lincoln, longue rue d'adobes au bord du Bonito : le magasin de Murphy et Dolan (« The House »), celui de Tunstall et McSween, l'hôtel Wortley, le vieux torreón de pierre et l'adobe de « Squire » John B. Wilson, juge de paix. Le 19 février 1878, Billy, Brewer et Middleton y signent leurs dépositions sur le meurtre de Tunstall ; Wilson délivre des mandats et les « Regulators » sont constitués.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 26, 39-40.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.95,
+     33.35
+    ]
+   },
+   "properties": {
+    "id": "L14",
+    "nom": "Morton et Baker abattus",
+    "debut": 1878.1836,
+    "fin": 1878.1836,
+    "date_edtf": "1878-03-09",
+    "precision": "jour",
+    "certitude": "hypothetique",
+    "categorie": "fusillade",
+    "description": "Le 6 mars 1878, les Regulators de Brewer capturent sur le bas Pecos William Morton et Frank Baker, deux membres du détachement accusés du meurtre de Tunstall. En les ramenant vers Lincoln par une route détournée, ils les tuent avec William McCloskey ; la version des Regulators, selon laquelle Morton aurait abattu McCloskey avant de fuir, reste peu crédible.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 43-44.",
+    "note": "Lieu hypothétique, entre le Pecos et Lincoln (la tradition parle d'Agua Negra ou de Blackwater Draw).",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.535,
+     33.355
+    ]
+   },
+   "properties": {
+    "id": "L15",
+    "nom": "Ranch de South Spring (John Chisum)",
+    "debut": 1878.1667,
+    "fin": 1878.5823,
+    "date_edtf": "1878-03~/1878-07",
+    "precision": "circa",
+    "certitude": "certaine",
+    "categorie": "refuge",
+    "description": "Le grand éleveur John Chisum, sympathisant des Regulators sans prendre part aux combats, ouvre son ranch de South Spring aux hommes de McSween, qui s'y réunissent pour arrêter leur stratégie fin mars 1878.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 45.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.3832,
+     33.4924
+    ]
+   },
+   "properties": {
+    "id": "L16",
+    "nom": "Lincoln : le shérif Brady abattu",
+    "debut": 1878.2466,
+    "fin": 1878.2466,
+    "date_edtf": "1878-04-01",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Au matin du 1er avril 1878, jour prévu pour l'ouverture de la cour, six Regulators, dont Billy, Waite et Middleton, embusqués derrière le mur d'adobe du corral du magasin Tunstall, abattent le shérif William Brady et un adjoint qui descendent la rue.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 45.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.785,
+     33.162
+    ]
+   },
+   "properties": {
+    "id": "L17",
+    "nom": "Blazer's Mill : l'agence mescalero et la mort de Buckshot Roberts",
+    "debut": 1878.2548,
+    "fin": 1878.2548,
+    "date_edtf": "1878-04-04",
+    "precision": "jour",
+    "certitude": "approximative",
+    "categorie": "fusillade",
+    "description": "Le dentiste Joseph Blazer loue sa maison d'adobe à étage, près de sa scierie, au gouvernement pour loger l'agent des Apaches mescaleros, Frederick C. Godfroy ; Mme Godfroy sert des repas aux voyageurs. Le 4 avril 1878, les Regulators y dînent quand arrive Buckshot Roberts. L'affrontement tourne au drame : mortellement blessé, Roberts tue Dick Brewer d'une balle de Springfield.",
+    "sources": "Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton, PDF p. 186. Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 26, 48-51.",
+    "note": "En 1878, le grand jury de Lincoln releva de fortes présomptions de fraude contre l'agent Godfroy.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.522,
+     33.495
+    ]
+   },
+   "properties": {
+    "id": "L18",
+    "nom": "Fort Stanton : le colonel Dudley",
+    "debut": 1878.5452,
+    "fin": 1878.5452,
+    "date_edtf": "1878-07-19",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "prison",
+    "description": "Le poste militaire de Fort Stanton, en amont de Lincoln sur le Bonito, est commandé par le lieutenant-colonel Nathan A. M. Dudley. Le 19 juillet 1878, il descend sur Lincoln avec des cavaliers noirs et de l'artillerie, ce qui fait basculer la bataille en faveur de la faction Dolan ; une cour d'enquête l'exonérera ensuite. Des membres des deux camps seront plus tard détenus au fort.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 62, 78, 90.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.3862,
+     33.4927
+    ]
+   },
+   "properties": {
+    "id": "L19",
+    "nom": "Lincoln : la « Big Killing » et l'incendie de la maison McSween",
+    "debut": 1878.5342,
+    "fin": 1878.5452,
+    "date_edtf": "1878-07-15/1878-07-19",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Le 14 juillet 1878, les Regulators de McSween reprennent position dans Lincoln : maison McSween, magasin Ellis, maison Montaño. Après plusieurs jours de tirs, l'arrivée de Dudley le 19 permet aux hommes de Dolan et de Peppin d'incendier la maison McSween. Le soir, McSween est tué en sortant ; Billy s'échappe à travers les tirs.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 75-80.",
+    "note": "L'emplacement de la maison McSween est aujourd'hui occupé par d'autres bâtiments.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -102.17,
+     35.53
+    ]
+   },
+   "properties": {
+    "id": "L20",
+    "nom": "Tascosa : vente des chevaux volés",
+    "debut": 1878.75,
+    "fin": 1878.75,
+    "date_edtf": "1878-10~",
+    "precision": "circa",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "À l'automne 1878, le Kid et quelques compagnons conduisent des chevaux volés au Texas. Dans la ville-champignon de Tascosa, au Panhandle, il les vend sans peine aux éleveurs et se lie avec un jeune médecin.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 86.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.385,
+     33.4921
+    ]
+   },
+   "properties": {
+    "id": "L21",
+    "nom": "Lincoln : meurtre de l'avocat Chapman",
+    "debut": 1879.1315,
+    "fin": 1879.1315,
+    "date_edtf": "1879-02-18",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Le soir du 18 février 1879, jour d'une trêve entre les factions, l'avocat manchot Huston Chapman, venu avec Susan McSween, est abattu dans la rue de Lincoln par Billy Campbell, en présence d'un Dolan ivre et de Jesse Evans ; Billy assiste au meurtre.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 87-89.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.384,
+     33.4919
+    ]
+   },
+   "properties": {
+    "id": "L22",
+    "nom": "Lincoln : rencontre nocturne avec le gouverneur Wallace",
+    "debut": 1879.2055,
+    "fin": 1879.2055,
+    "date_edtf": "1879-03-17",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "Pour témoigner contre les meurtriers de Chapman, Billy rencontre de nuit le gouverneur Lew Wallace dans la maison de Squire Wilson. Wallace lui laisse entendre qu'il sera gracié ; la seule source de cette conversation est une interview donnée par Wallace en 1901.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 90-93.",
+    "note": "Date d'après la tradition (17 mars 1879) ; Utley ne la précise pas.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.33,
+     33.41
+    ]
+   },
+   "properties": {
+    "id": "L23",
+    "nom": "San Patricio : refuge et arrestation consentie",
+    "debut": 1879.2164,
+    "fin": 1879.2164,
+    "date_edtf": "1879-03-21",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "refuge",
+    "description": "Avec Tom O'Folliard, Billy se cache chez un ami à San Patricio, au confluent du Bonito et du Ruidoso. Comme convenu avec Wallace, le shérif Kimball les y arrête le 21 mars 1879. Détenu à Lincoln, Billy est fêté par les habitants ; il s'évade quelques semaines plus tard, faute de voir la grâce promise.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 26, 90-92.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.193,
+     34.4045
+    ]
+   },
+   "properties": {
+    "id": "L24",
+    "nom": "Fort Sumner : la maison Maxwell et le refuge des bergers",
+    "debut": 1878.5833,
+    "fin": 1881.5823,
+    "date_edtf": "1878-08~/1881-07",
+    "precision": "circa",
+    "certitude": "certaine",
+    "categorie": "refuge",
+    "description": "Quand l'armée abandonne Fort Sumner, Lucien Maxwell achète les bâtiments de l'ancien poste et s'y retire ; à sa mort en 1875, son fils Pete reprend le ranch, et la famille habite l'ancien quartier des officiers. Charlie Bowdre et Doc Scurlock s'y établissent en 1878 et travaillent pour Pete Maxwell. Peuplé surtout de bergers hispaniques qui l'aiment et le protègent, Fort Sumner devient le refuge favori de Billy : bailes, queridas et saloons.",
+    "sources": "Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton, PDF p. 200. Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 95, 113, 115.",
+    "note": "Utley attribue l'achat du fort à Pete Maxwell, Wallis à Lucien.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.1915,
+     34.405
+    ]
+   },
+   "properties": {
+    "id": "L25",
+    "nom": "Fort Sumner : Joe Grant tué au saloon de Hargrove",
+    "debut": 1880.0247,
+    "fin": 1880.0247,
+    "date_edtf": "1880-01-10",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Le 10 janvier 1880, au saloon de Bob Hargrove, un Texan ivre et bravache, Joe Grant, parie qu'il tuera quelqu'un avant Billy. Billy admire le revolver de Grant, en fait tourner le barillet et le lui rend une chambre vide sous le chien ; quand Grant le met en joue dans son dos, le chien tombe à vide, et Billy se retourne et l'abat. C'est le seul homicide qu'il ait commis seul.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 96-97.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.738,
+     33.745
+    ]
+   },
+   "properties": {
+    "id": "L26",
+    "nom": "White Oaks : la ville minière",
+    "debut": 1880.8333,
+    "fin": 1880.8333,
+    "date_edtf": "1880-11~",
+    "precision": "circa",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "La ville minière de White Oaks sert de débouché au bétail et aux chevaux volés par Billy et ses compagnons. En novembre 1880, un détachement de citoyens s'y forme pour les arrêter.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 98.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.6,
+     34.2
+    ]
+   },
+   "properties": {
+    "id": "L27",
+    "nom": "Relais de Greathouse : mort de Jimmy Carlyle",
+    "debut": 1880.9068,
+    "fin": 1880.9068,
+    "date_edtf": "1880-11-27",
+    "precision": "jour",
+    "certitude": "hypothetique",
+    "categorie": "fusillade",
+    "description": "À mi-chemin entre White Oaks et Fort Sumner, le relais de « Whiskey Jim » Greathouse abrite les voleurs. À l'aube du 27 novembre 1880, le détachement de White Oaks encercle la maison ; le forgeron Jimmy Carlyle entre négocier, Greathouse servant d'otage. Retenu prisonnier, Carlyle est tué en sautant par une fenêtre ; les assiégés s'échappent.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 98, 109.",
+    "note": "Localisation hypothétique (le relais était au nord de White Oaks, vers l'actuelle Corona).",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.56,
+     34.77
+    ]
+   },
+   "properties": {
+    "id": "L28",
+    "nom": "Près de Puerto de Luna : le ranch de Pablo Beaubien",
+    "debut": 1880.9616,
+    "fin": 1880.9644,
+    "date_edtf": "1880-12-17/1880-12-18",
+    "precision": "jour",
+    "certitude": "hypothetique",
+    "categorie": "prison",
+    "description": "Parti du magasin d'Alexander Grzelachowski à Puerto de Luna le 17 décembre 1880 avant une tempête, le shérif Pat Garrett fait halte au ranch de Pablo Beaubien. Son éclaireur, déguisé en berger cherchant des bêtes égarées, y confirme que le Kid et cinq compagnons sont à Fort Sumner.",
+    "sources": "Garrett, Pat F. (1882), The Authentic Life of Billy, the Kid, Santa Fe, New Mexican Printing and Publishing, PDF p. 68.",
+    "note": "Position hypothétique sur le Pecos, en aval de Puerto de Luna.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.194,
+     34.4038
+    ]
+   },
+   "properties": {
+    "id": "L29",
+    "nom": "Fort Sumner : l'embuscade et la mort de Tom O'Folliard",
+    "debut": 1880.9671,
+    "fin": 1880.9671,
+    "date_edtf": "1880-12-19",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Garrett arrive à Fort Sumner sous la neige le 17 décembre 1880 et y tend un piège. Le soir du 19, le Kid, O'Folliard, Pickett, Rudabaugh et Wilson entrent au village par l'ancien hôpital, où le guette le détachement. O'Folliard est mortellement touché à la poitrine ; il meurt pendant que les hommes de Garrett reprennent leur partie de poker. Les autres s'enfuient.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 100-101.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.98,
+     34.47
+    ]
+   },
+   "properties": {
+    "id": "L30",
+    "nom": "Stinking Springs : la capture",
+    "debut": 1880.9781,
+    "fin": 1880.9781,
+    "date_edtf": "1880-12-23",
+    "precision": "jour",
+    "certitude": "approximative",
+    "categorie": "prison",
+    "description": "Le détachement de Garrett suit les traces dans la neige jusqu'à une cabane de pierre à Stinking Springs. À l'aube du 23 décembre 1880, Charlie Bowdre sort et est abattu. Garrett tue un cheval dans l'embrasure de la porte et coupe à la carabine les longes des autres bêtes ; affamés, Billy, Rudabaugh, Wilson et Pickett se rendent.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 67, 102-104.",
+    "note": "Site approximatif, à l'est de Fort Sumner, près de l'actuelle Taiban.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.1925,
+     34.404
+    ]
+   },
+   "properties": {
+    "id": "L31",
+    "nom": "Fort Sumner, veille de Noël 1880 : adieux à Paulita Maxwell",
+    "debut": 1880.9808,
+    "fin": 1880.9808,
+    "date_edtf": "1880-12-24",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "Ramené enchaîné à Fort Sumner, Billy obtient, grâce à Deluvina Maxwell, servante navajo très attachée à lui, de dire adieu à Paulita Maxwell. Toujours enchaîné à Rudabaugh, il entre dans l'ancien quartier des officiers ; la mère de Paulita, Luz Beaubien Maxwell, demande en vain qu'on lui ôte ses fers pour un moment d'intimité.",
+    "sources": "Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton, PDF p. 217. Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 102.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.218,
+     35.594
+    ]
+   },
+   "properties": {
+    "id": "L32",
+    "nom": "Las Vegas : le prisonnier célèbre",
+    "debut": 1880.9863,
+    "fin": 1880.9863,
+    "date_edtf": "1880-12-26",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "prison",
+    "description": "À Las Vegas, une foule accueille les prisonniers. Billy, enjoué, salue les badauds depuis la diligence et plaisante avec un journaliste qui l'interroge en prison le lendemain. Le lendemain, le train emmène les prisonniers à Santa Fe ; Tom Pickett reste détenu à Las Vegas.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 103.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.942,
+     35.688
+    ]
+   },
+   "properties": {
+    "id": "L33",
+    "nom": "Santa Fe : la prison du comté",
+    "debut": 1880.989,
+    "fin": 1881.2356,
+    "date_edtf": "1880-12-27/1881-03-28",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "prison",
+    "description": "Billy passe trois mois dans la prison de Santa Fe avec Rudabaugh et Wilson, écrivant en vain au gouverneur Wallace pour lui rappeler sa promesse. Une tentative d'évasion en creusant le mur de la prison échoue ; le shérif fait dès lors enchaîner les détenus.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 105-107.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -106.795,
+     32.2735
+    ]
+   },
+   "properties": {
+    "id": "L34",
+    "nom": "La Mesilla : procès et condamnation à mort",
+    "debut": 1881.2411,
+    "fin": 1881.2795,
+    "date_edtf": "1881-03-30/1881-04-13",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "proces",
+    "description": "Le 28 mars 1881, deux marshals adjoints conduisent Billy en train à La Mesilla, où le juge Warren Bristol ouvre la session le 30. L'accusation fédérale (meurtre de Roberts) tombe ; Albert J. Fountain et John Bail le défendent. Le 9 avril, Billy est reconnu coupable du meurtre du shérif Brady ; le juge Bristol fixe l'exécution au 13 mai 1881, à Lincoln.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 106-108. Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton, PDF p. 123-125.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.3835,
+     33.4923
+    ]
+   },
+   "properties": {
+    "id": "L35",
+    "nom": "Lincoln : l'évasion du palais de justice",
+    "debut": 1881.3205,
+    "fin": 1881.3205,
+    "date_edtf": "1881-04-28",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "fusillade",
+    "description": "Détenu au premier étage de l'ancien magasin Dolan, devenu palais de justice, sous la garde de James W. Bell et de Bob Olinger, Billy s'évade le 28 avril 1881. Il tue Bell dans l'escalier, puis abat Olinger, qui accourt de l'hôtel Wortley, avec le fusil que celui-ci avait chargé. Le vieux cuisinier Godfrey Gauss lui amène un cheval ; il quitte Lincoln à l'ouest, ses chaînes battant ses jambes.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 64, 109-111.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.1928,
+     34.4042
+    ]
+   },
+   "properties": {
+    "id": "L36",
+    "nom": "Fort Sumner : la mort dans la chambre de Pete Maxwell",
+    "debut": 1881.5315,
+    "fin": 1881.5315,
+    "date_edtf": "1881-07-14",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "mort",
+    "description": "Au lieu de fuir au Mexique, Billy revient à Fort Sumner. Dans la nuit du 14 juillet 1881, Garrett l'attend dans la chambre obscure de Pete Maxwell et l'abat d'une balle près du cœur. Au matin, Deluvina Maxwell frappe Garrett de ses poings, et les femmes de Fort Sumner veillent le corps à la chandelle.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 113, 115-117. Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton, PDF p. 216.",
+    "note": "",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.1886,
+     34.4031
+    ]
+   },
+   "properties": {
+    "id": "L37",
+    "nom": "Fort Sumner : la tombe au vieux cimetière militaire",
+    "debut": 1881.5342,
+    "fin": 1881.5342,
+    "date_edtf": "1881-07-15",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "mort",
+    "description": "Proprement vêtu, Billy est mis en bière et porté au vieux cimetière militaire, où les habitants enterrent désormais leurs morts ; Lucien Maxwell y repose déjà. Sa tombe voisine celles de Tom O'Folliard et de Charlie Bowdre.",
+    "sources": "Utley, Robert M. (2015), Wanted: The Outlaw Lives of Billy the Kid and Ned Kelly, New Haven, Yale University Press, PDF p. 117. Wallis, Michael (2007), Billy the Kid: The Endless Ride, New York, W. W. Norton, PDF p. 226.",
+    "note": "",
+    "type": "lieu"
+   }
+  }
+ ]
+}
