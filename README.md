@@ -17,7 +17,7 @@ css/style.css         mise en page et habillage (carte ancienne, cartouche, doss
 js/fonds.js           fonds de carte : Parchemin (par défaut), Plan moderne, Satellite
 js/app.js             carte, couches, timeline, fiches
 js/visite.js          visite animée (le cavalier ou le train suit les routes)
-data/lieux.geojson    37 lieux (points)
+data/lieux.geojson    41 lieux (points)
 data/trajets.geojson  12 routes (lignes)
 images/               étoile de shérif, cavalier, locomotive, rose des vents, ornements
 ```

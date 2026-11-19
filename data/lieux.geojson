@@ -888,6 +888,102 @@
     "note": "",
     "type": "lieu"
    }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -100.38,
+     33.07
+    ]
+   },
+   "properties": {
+    "id": "L38",
+    "nom": "Llano Estacado, près de Rath City : Pat Garrett tue le chasseur de bisons Joe Briscoe (automne 1876)",
+    "debut": 1876.0,
+    "fin": 1876.0,
+    "date_edtf": "1876~",
+    "precision": "circa",
+    "certitude": "hypothetique",
+    "categorie": "fusillade",
+    "description": "Né en Alabama le 5 juin 1850 et élevé sur une plantation de la paroisse de Claiborne, en Louisiane, Pat Garrett chasse le bison au Texas. À l'automne 1876, après s'être équipée à Fort Griffin, l'équipe de Glenn et Garrett gagne le Llano Estacado. Un matin, une querelle éclate avec le jeune Irlandais Joe Briscoe : Garrett le frappe, Briscoe court chercher la hache du cuisinier, et Garrett l'abat d'une balle de pistolet. C'est le premier homme qu'il tue.",
+    "sources": "Gardner, Mark Lee (2010), To Hell on a Fast Horse: The True Story of Billy the Kid and Pat Garrett, New York, William Morrow (PDF du Drive de l'auteur, lu en entier), PDF p. 29. ; Gardner, Mark Lee (2010), To Hell on a Fast Horse: The True Story of Billy the Kid and Pat Garrett, New York, William Morrow (PDF du Drive de l'auteur, lu en entier), PDF p. 32.",
+    "note": "Glenn était parti chercher une pièce de fusil à Rath City : point schématique dans ce secteur.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -105.15,
+     35.2
+    ]
+   },
+   "properties": {
+    "id": "L39",
+    "nom": "Anton Chico : Garrett épouse Apolinaria Gutiérrez (janvier 1880)",
+    "debut": 1880.0356,
+    "fin": 1880.0356,
+    "date_edtf": "1880-01-14",
+    "precision": "jour",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "Veuf de Juanita Gutiérrez, épousée sans prêtre à l'automne 1879 à Fort Sumner et morte peu après, Pat Garrett se remarie quatre jours après que le Kid a tué Joe Grant au saloon de Fort Sumner : il épouse devant le curé d'Anton Chico, à 90 milles au nord-ouest, Apolinaria (« Polinaria », dite « La Negra ») Gutiérrez, fille de José Dolores et de Feliciana Gutiérrez. Les bailes du vieux dépôt de l'intendance de Fort Sumner attiraient les jeunes filles de Puerto de Luna, de Santa Rosa et même d'Anton Chico.",
+    "sources": "Gardner, Mark Lee (2010), To Hell on a Fast Horse: The True Story of Billy the Kid and Pat Garrett, New York, William Morrow (PDF du Drive de l'auteur, lu en entier), PDF p. 77, 85-86.",
+    "note": "Point au village d'Anton Chico (comté de Guadalupe).",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -103.25,
+     34.12
+    ]
+   },
+   "properties": {
+    "id": "L40",
+    "nom": "Los Portales : la cache du Kid pour le bétail volé (décembre 1880)",
+    "debut": 1880.9167,
+    "fin": 1880.9167,
+    "date_edtf": "1880-12",
+    "precision": "mois",
+    "certitude": "approximative",
+    "categorie": "refuge",
+    "description": "Rocher saillant de quinze pieds au-dessus de la plaine, à 65 milles au sud-est de Fort Sumner, sur une piste à bétail vers le Panhandle texan, Los Portales doit son nom à son surplomb calcaire en forme de porches ; deux sources et une grotte y offrent un abri. Billy y cache le bétail volé. En décembre 1880, Garrett et sa troupe y espèrent reprendre une soixantaine de bêtes : ils ne trouvent que deux vaches, leurs veaux et un yearling, et dans la grotte de la farine moisie, un peu de sel et des couvertures ; le Kid avait déplacé le troupeau à quinze milles de là. Au retour, la troupe s'arrête au ranch de Wilcox et Brazil, à douze milles à l'est de Fort Sumner.",
+    "sources": "Gardner, Mark Lee (2010), To Hell on a Fast Horse: The True Story of Billy the Kid and Pat Garrett, New York, William Morrow (PDF du Drive de l'auteur, lu en entier).",
+    "note": "Point aux sources de Los Portales, au sud-est de la ville de Portales, approximatif.",
+    "type": "lieu"
+   }
+  },
+  {
+   "type": "Feature",
+   "geometry": {
+    "type": "Point",
+    "coordinates": [
+     -104.523,
+     33.394
+    ]
+   },
+   "properties": {
+    "id": "L41",
+    "nom": "Roswell : Garrett, Ash Upson et The Authentic Life of Billy, the Kid (1881-1882)",
+    "debut": 1881.5833,
+    "fin": 1882.999,
+    "date_edtf": "1881-08/1882",
+    "precision": "mois",
+    "certitude": "certaine",
+    "categorie": "vie",
+    "description": "Après la mort du Kid, Garrett s'installe à Roswell. Le journaliste, maître de poste et juge de paix Ash Upson, qui avait connu Billy enfant à Silver City, emménage chez lui en août 1881 et rédige en grande partie The Authentic Life of Billy, the Kid (1882), la réponse de Garrett aux insinuations sur la mort du Kid. Garrett restera à Roswell jusqu'en 1891 (irrigation de la vallée du Pecos), avant de partir pour Uvalde, au Texas, puis de devenir shérif du comté de Doña Ana (affaire Fountain, 1896) et collecteur des douanes à El Paso (1901) ; il est tué près de Las Cruces en février 1908.",
+    "sources": "Gardner, Mark Lee (2010), To Hell on a Fast Horse: The True Story of Billy the Kid and Pat Garrett, New York, William Morrow (PDF du Drive de l'auteur, lu en entier), PDF p. 41, 157. ; Garrett, Pat F. (1882), The Authentic Life of Billy, the Kid, Santa Fe, New Mexican Printing and Publishing.",
+    "note": "Point au centre historique de Roswell.",
+    "type": "lieu"
+   }
   }
  ]
 }
